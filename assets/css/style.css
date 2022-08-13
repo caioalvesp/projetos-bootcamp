@@ -1,25 +1,74 @@
-html, body {
-  height: 100%;
-  width: 100%;
+/* CSS HEX */
+:root {
+  --tart-orange: #ff4242ff;
+  --twilight-lavender: #7b435bff;
+  --queen-blue: #456990ff;
+  --star-command-blue: #0077b6ff;
+  --maximum-blue-green: #00c2d1ff;
+  --sea-green: #09814aff;
 }
 
+/* RESETANDO ALGUNS ESTILOS */
 * {
-font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.texto {
-  max-width: 300px;
+/* ESTILIZANDO HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5em;
 }
 
-.foto-sobre {
+ul {
+  list-style: none;
+}
+
+.nav-list {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-h3, h4 {
-  margin: 5px;
+.nav-list > li:nth-child(1) {
+  color: var(--tart-orange);
 }
+
+.nav-list > li:nth-child(2) {
+  color: var(--twilight-lavender);
+}
+
+.nav-list > li:nth-child(3) {
+  color: var(--queen-blue);
+}
+
+.nav-list > li:nth-child(4) {
+  color: var(--star-command-blue);
+}
+
+.nav-list > li > a {
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 0.125em;
+}
+
+.nav-list > li > a:hover {
+  color: black;
+  text-decoration: none;
+  transition: 500ms;
+}
+
+a {
+  color: inherit;
+}
+
+/* */
 
 td {
   text-align: center;
@@ -31,5 +80,5 @@ table {
 
 table > thead > tr > th,
 table > tbody > tr > td {
-  padding: .5rem;
+  padding: 0.5rem;
 }
